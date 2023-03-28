@@ -138,7 +138,7 @@
               class="category"
               class:faded={highlighted && account !== highlighted}
             >
-              {#each stack.filter((b) => !Number.isNaN(b[1])) as bar}
+              {#each stack.filter((b) => !Number.isNaN(b[1]) && b[0] !== b[1]) as bar}
                 <rect
                   class:desaturate={bar.data.date > today}
                   width={x1.bandwidth()}
