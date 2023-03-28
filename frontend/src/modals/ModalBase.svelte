@@ -89,6 +89,7 @@
     max-height: 100%;
     padding: 1em;
     margin: 0.5em;
+    overflow-y: scroll;
     background: var(--background);
     box-shadow: 0 0 20px var(--overlay-wrapper-background);
   }
